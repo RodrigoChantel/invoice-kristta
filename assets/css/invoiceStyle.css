@@ -3,18 +3,28 @@ body, html{
     padding: 0 !important;
     min-width: 100% !important;
     min-height: 100% !important;
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(255, 255, 255);
 }
 
-#headerInvoice{
+#invoice{
     /*width: 595px;
     height: 842px;*/
 
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 #bodyInvoice{
     height: 20vh !important;
+}
+
+.field{
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.field2{
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .invoice-row{

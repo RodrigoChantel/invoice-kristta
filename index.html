@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- BOOTSTRAP -->
-    <link href="./assets/css/bootstrap-v5.2.css" rel="stylesheet">  
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/invoiceStyle.css" type="text/css">
@@ -14,57 +11,58 @@
     <title>Invoice</title>
 </head>
 <body class="m-0 py-0 w-100 h-100">
-    <div id="headerInvoice">
-        <div class="invoice-row py-0">
-            <div class="invoice-col-30 px-1" style="margin-top: auto; margin-bottom: auto;">
-                <h1 class="text-start">LOGOMARCA</h1>
-            </div>
-            <div class="invoice-col-50 px-1">
-                <p class="full-name py-0">NOME COMPLETO DO CLIENTE</p>
-                <p class="text-data py-0">
-                    <span>Endereço completo do cliente</span>
-                    <span>49200-000 Estância-SE</span>
-                </p>
-            </div>
-            <div class="invoice-col-20 px-1">
-                <div>
-                    <label class="fw-bold" for="contrato">Código</label>
-                    <p class="my-0" id="contrato">1234/23</p>
+    <div id="invoice">
+        <div id="headerInvoice">
+            <div class="invoice-row">
+                <div class="invoice-col-30 px-1" style="margin-top: auto; margin-bottom: auto;">
+                    <h1 class="text-start">LOGOMARCA</h1>
                 </div>
-                <div class="py-0">
-                    <label class="fw-bold" for="cod">CPF/CNPJ</label>
-                    <p class="my-0" id="cod">12345678910</p>
+                <div class="invoice-col-50 px-1">
+                    <span class="full-name">NOME COMPLETO DO CLIENTE</span>
+                    <p class="text-data">
+                        <span>Endereço completo do cliente</span>
+                        <span>49200-000 Estância-SE</span>
+                    </p>
                 </div>
-            </div>
-            <div class="invoice-col-20 px-1 text-end">
-                <p class="my-0 fw-bold">Vencimento <span class="fw-normal">01/01/0001</span></p>
-                <div>
-                    <label class="fw-bold" for="valor">Valor</label>
-                    <p class="my-0 fs-large" id="valor">00,00</p>
+                <div class="invoice-col-20 px-1">
+                    <div>
+                        <label class="fw-bold" for="contrato">Código</label>
+                        <p class="my-0" id="contrato">1234/23</p>
+                    </div>
+                    <div class="py-0">
+                        <label class="fw-bold" for="cod">CPF/CNPJ</label>
+                        <p class="my-0" id="cod">12345678910</p>
+                    </div>
                 </div>
-            </div>
-        </div><!--END ROW-->
+                <div class="invoice-col-20 px-1 text-end">
+                    <p class="my-0 fw-bold">Vencimento <span class="fw-normal">01/01/0001</span></p>
+                    <div>
+                        <label class="fw-bold" for="valor">Valor</label>
+                        <p class="my-0 fs-large" id="valor">00,00</p>
+                    </div>
+                </div>
+            </div><!--END ROW-->        
+        </div>
 
         <div class="hr mb-3"> </div>
 
-        <div class="invoice-row">
-            <div class="invoice-col-50 border-body px-1" style="margin-right: 5px;">
-                <p style="margin-top: 10px;">Mensagem:</p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nisi a earum fugit magnam asperiores. Ea laboriosam laborum quia explicabo recusandae aperiam nemo repellendus voluptas amet, voluptatum dolore iure repudiandae.
-                </p>
-            </div>
-            <div class="invoice-col-50 border-body px-1" style="margin-right: 5px;">
-                Descrição:
+        <div id="bodyInvoice">
+            <div class="invoice-row">
+                <div class="invoice-col-50 border-body px-1 field" style="margin-right: 5px;">
+                    <p style="margin-top: 10px;">Mensagem:</p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nisi a earum fugit magnam asperiores. Ea laboriosam laborum quia explicabo recusandae aperiam nemo repellendus voluptas amet, voluptatum dolore iure repudiandae.
+                    </p>
+                </div>
+                <div class="invoice-col-50 border-body px-1 field" style="margin-left: 5px;">
+                    Descrição:
+                </div>
             </div>
         </div>
-        
     </div>
 </body>
 
 <!-- JAVASCRIPT -->
 <script src="./assets/js/fontawesome.js"></script>
-<script src="./assets/js/pooperjs.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
 
 </html>
