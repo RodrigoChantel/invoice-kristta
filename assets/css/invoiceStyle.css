@@ -127,6 +127,11 @@ body, html{
     padding-bottom: 0px !important;
 }
 
+.py-1{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
 .my-0{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -137,6 +142,13 @@ body, html{
 }
 
 .border-body{
+    border: 1px;
+    border-color: rgb(0, 0, 0) !important;
+    border-radius: 15px;
+    border-style:solid;
+}
+
+.border-body2{
     border: 1px;
     border-color: rgb(0, 0, 0) !important;
     border-radius: 15px;

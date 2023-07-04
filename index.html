@@ -12,7 +12,7 @@
 </head>
 <body class="m-0 py-0 w-100 h-100">
     <div id="invoice">
-        <div id="headerInvoice">
+        <div id="headerInvoice" style="border: 0px; border-bottom: 1px; border-style: solid; margin-bottom: 20px; padding-bottom: 20px;">
             <div class="invoice-row">
                 <div class="invoice-col-30 px-1" style="margin-top: auto; margin-bottom: auto;">
                     <img src="./assets/img/logob.webp" width="200vh" alt="">
@@ -44,8 +44,6 @@
             </div><!--END ROW-->        
         </div>
 
-        <hr style="border-top: 1px; border-style: solid; margin-top: 15px; margin-bottom: 15px;">
-
         <div id="bodyInvoice">
             <div class="invoice-row">
                 <div class="invoice-col-50 border-body px-1 field" style="margin-right: 5px;">
@@ -64,10 +62,27 @@
         </div>
 
         <div id="bodyInvoice2">
-            <div class="invoice-row">
-                <div class="invoice-col-100 border-body px-1 field2">
-                    <p style="border-top: 0px; border-bottom: 1px; border-left: 0; border-right: 0; border-style: solid;"><i class="fa-solid fa-computer" style="font-size: 40px;"></i> <span class="fw-bold fs-large">Motivo</span></p>
+            <div class="invoice-row border-body field2" style="max-width: 99.7%;">
+
+                <div class="invoice-col-50 px-1 py-1">
+                    <div class="invoice-row">
+                        <div class="invoice-col-20">
+                            <i class="fa-solid fa-computer" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="invoice-col-80" style="border-top: 0px; border-bottom: 1px; border-left: 0; border-right: 0; border-style: solid; padding-top: 10px;">
+                            <span class="fw-bold fs-large">Motivo</span>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="invoice-col-50 px-1 py-1">
+                    <div class="invoice-row">
+                        <div class="invoice-col-100" style="border-top: 0px; border-bottom: 1px; border-left: 0; border-right: 0; border-style: solid; padding-top: 10px;">
+                            <span class="fw-bold fs-large">Itens Eventuais</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
